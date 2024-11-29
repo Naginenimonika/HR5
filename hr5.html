@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="hr5.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    
+    <!-- User Location Input -->
+    <div id="location">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+    
+    <!-- Weather Information Display -->
+    <div id="weather-info">
+      <h2 id="city-name">City Name</h2>
+      <p id="description">Weather description</p>
+      <p id="temperature">Temperature: --°C</p>
+      <p id="humidity">Humidity: --%</p>
+      <p id="wind">Wind: -- km/h</p>
+    </div>
+
+    <!-- Button to Get Weather based on User's Current Location -->
+    <button onclick="getUserLocation()">Get Weather for My Location</button>
+    
+  </div>
+
+  <script src="hr5.js"></script>
+</body>
+</html>
